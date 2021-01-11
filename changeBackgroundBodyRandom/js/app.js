@@ -14,6 +14,8 @@
     if (!Array.isArray(numberList) || !numberList.length) return [];
     return Math.trunc(Math.random() * numberList.length);
   };
+
+  const showColor = document.querySelector("#color");
   // find element
   const button = document.querySelector("button");
   // add event listener
@@ -21,6 +23,7 @@
     const handleButton = (event) => {
       let random = randomNumber(colorList);
       document.body.style.backgroundColor = colorList[random];
+      showColor.innerHTML = colorList[random];
     };
     button.addEventListener("click", handleButton);
   }
