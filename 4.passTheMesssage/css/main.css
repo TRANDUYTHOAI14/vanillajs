@@ -1,0 +1,59 @@
+body {
+  background-color: #95b8d1;
+}
+
+.passmess {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+  padding: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 4px 0px #000000;
+  border-radius: 13px;
+  color: #fff;
+}
+
+.passmess h2 {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.passmess form label {
+  background-color: red;
+  padding: 4px 1rem;
+  border-radius: 5px 1rem;
+}
+
+p#feedback {
+  background-color: red;
+  padding: 4px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 0 7rem;
+  font-weight: bold;
+  display: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+[type="submit"] {
+  background-color: red;
+  color: #fff;
+  border: 0;
+
+  padding: 5px 10px;
+
+  cursor: pointer;
+}
+
+#show {
+  color: yellow;
+}
