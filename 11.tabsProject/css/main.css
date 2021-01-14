@@ -1,0 +1,15 @@
+.tab-title {
+  margin-bottom: 1rem;
+}
+
+.actives {
+  background-color: blueviolet;
+}
+
+.btn {
+  margin-right: 1rem;
+}
+
+.tab-content__item {
+  display: none;
+}
