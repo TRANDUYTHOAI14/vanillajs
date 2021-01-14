@@ -1,0 +1,25 @@
+.max-height {
+  min-height: 100vh;
+}
+.accordion-content {
+  display: none;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.active {
+  background-color: brown;
+  color: #fff;
+}
+
+.active + div {
+  display: block;
+}
+
+button {
+  margin-bottom: 1rem;
+}
