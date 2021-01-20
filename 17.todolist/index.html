@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.css" />
+    <title>To Do List Project</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todolist">
+        <div class="todoinner">
+          <h2>Todolist</h2>
+          <form action="#" id="form-todo" class="form-todo">
+            <div class="form-group">
+              <input
+                type="text"
+                name="valueInput"
+                id="valueInput"
+                placeholder="Type to do item..."
+              />
+              <button type="submit">Add Todo</button>
+            </div>
+            <div class="feedback fail">
+              You mistypes data ! Retyped please....
+            </div>
+            <div class="feedback success">Form submitted successfully !</div>
+            <div class="feedback delete-success">To do deleted!</div>
+          </form>
+          <!-- end form -->
+          <div class="todo-list"></div>
+
+          <div class="clear">
+            <button class="btn btn-danger btn-lg btn-clear">Clear all</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- bootstrap js -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- script js -->
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
