@@ -9,6 +9,13 @@
     return Math.trunc(Math.random() * arr.length);
   };
 
+  let colorRandom = JSON.parse(localStorage.getItem("colorRandom"));
+
+  if (colorRandom) {
+    document.body.style.backgroundColor = colorRandom;
+    color.innerHTML = colorRandom;
+  }
+
   if (button) {
     const handleButton = (event) => {
       // hex character
@@ -37,6 +44,9 @@
         let randomItem = hexList[randomNumber(hexList)];
         randomColor += randomItem;
       }
+
+      localStorage.setItem("colorRandom", JSON.stringify(randomColor));
+
       // change color body elemenet
       document.body.style.backgroundColor = randomColor;
       color.innerHTML = randomColor;
