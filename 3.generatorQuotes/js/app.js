@@ -53,7 +53,6 @@
       let randomColor = colorList[randomNumber(colorList)];
       // get random element
       let randomElement = quoteList[random];
-      console.log(randomElement);
       // render
       img.src = randomElement.avatar;
       name.innerHTML = randomElement.name;
