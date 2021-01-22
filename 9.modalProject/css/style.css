@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+}
+
+img {
+  max-height: auto;
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.item {
+  margin-bottom: 3rem;
+}
+
+.modals {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #00000080;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: none;
+}
+
+.modal-content {
+  max-width: 80%;
+  height: 80%;
+
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  cursor: pointer;
+}
