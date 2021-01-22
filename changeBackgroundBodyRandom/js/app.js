@@ -18,13 +18,28 @@
   const showColor = document.querySelector("#color");
   // find element
   const button = document.querySelector("button");
+
+  let colorRandom = JSON.parse(localStorage.getItem("color"));
+
+  if (colorRandom) {
+    document.body.style.backgroundColor = colorRandom;
+    showColor.innerHTML = colorRandom;
+  }
+
   // add event listener
   if (button) {
     const handleButton = (event) => {
       let random = randomNumber(colorList);
-      document.body.style.backgroundColor = colorList[random];
-      showColor.innerHTML = colorList[random];
+
+      let colorRandom = colorList[random];
+
+      localStorage.setItem("color", JSON.stringify(colorRandom));
+
+      document.body.style.backgroundColor = colorRandom;
+
+      showColor.innerHTML = colorRandom;
     };
+
     button.addEventListener("click", handleButton);
   }
 })();
