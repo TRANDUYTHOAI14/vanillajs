@@ -60,6 +60,15 @@ const testimonialList = [
   // init index
   let index = 0;
 
+  // reload
+  let people = JSON.parse(localStorage.getItem("people"));
+  if (people) {
+    img.src = people.image;
+    name.innerHTML = people.name;
+    add.innerHTML = people.address;
+    content.innerHTML = people.message;
+  }
+
   // handle button funciton
   const handleButton = (event) => {
     // element current
@@ -67,17 +76,22 @@ const testimonialList = [
 
     // logic button prev and next
     let testi = testimonialList[index];
+
     if (elementCurrent.classList.contains("prev")) {
       index--;
       if (index < 0) index = testimonialList.length - 1;
+
+      // save API
+      localStorage.setItem("people", JSON.stringify(testi));
     }
 
     if (elementCurrent.classList.contains("next")) {
       index++;
       if (index > testimonialList.length - 1) index = 0;
+      // save API
+      localStorage.setItem("people", JSON.stringify(testi));
     }
 
-    // render to UI
     img.src = testi.image;
     name.innerHTML = testi.name;
     add.innerHTML = testi.address;
