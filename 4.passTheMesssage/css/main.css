@@ -4,10 +4,7 @@ body {
 }
 
 .passmess {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   background-color: #2196f3;
   padding: 2rem;
   max-width: 80%;
@@ -24,33 +21,18 @@ body {
 
 .passmess form label {
   background-color: red;
-  padding: 4px 1rem;
-  border-radius: 5px 1rem;
 }
 
 p#feedback {
-  background-color: red;
-  padding: 4px;
   text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  border-radius: 0 7rem;
-  font-weight: bold;
+  color: yellow;
   display: none;
-}
-
-.container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
 [type="submit"] {
   background-color: red;
   color: #fff;
   border: 0;
-
-  padding: 5px 10px;
 
   cursor: pointer;
 }
